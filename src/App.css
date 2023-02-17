@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loginButton {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 20px;
+
+  cursor: pointer;
+}
+.loginButton a {
+  text-decoration: none;
+  color: inherit;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.menuBar {
+  display: flex;
+
+  list-style: none;
+}
+.menuBar li {
+  padding: 10px;
+}
+.menuContainer {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search {
+  position: absolute;
+  right: 40px;
+}
+.search input {
+  border: none;
+  border-bottom: 1px solid black;
+}
+.search input:focus {
+  outline: none;
+}
+.cardItem {
+  transition: all 0.5s;
+  position: relative;
+}
+.cardItem img {
+  width: 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardItem:hover {
+  transform: scale(1.05);
+  z-index: 999;
+}
+.productImg {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buyButton {
+  margin-top: 30px;
+  width: 100%;
+}
+.choice {
+  font-size: 13px;
+  padding: 5px;
 }
