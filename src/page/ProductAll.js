@@ -8,7 +8,7 @@ const ProductAll = () => {
   const [query, setQuery] = useSearchParams();
   const getproducts = async () => {
     let searchQuery = query.get("q") || "";
-    let url = `https://my-json-server.typicode.com/myamta/hnmdata/products?q=${searchQuery}`;
+    let url = `https://my-json-server.typicode.com/myamta/data/products?q=${searchQuery}`;
     let response = await fetch(url);
     let data = await response.json();
     //await를빼먹어서 productList.map is not a function이떴다. 빼먹지말기
